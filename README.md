@@ -5,17 +5,19 @@
 ```bash
 # For example 
 http-server -p 8080 -S  # will create a https server without cert-undefined error
+
+# And everything including usage is the same except the installation!
 ```
 
-> And everything is the same except the installation!
+## Why I create this?
+> I am front-end developer trouble with webrtc, webrtc requires https for audio/video usage, and unsafe https connection is OK.
+> But every time https-server requires me to apply -C && -K, I'm going to be sick.
 
 ## Installation:
 
 #### Globally via `npm`
 
     npm install --global http-server-v2
-
-This will install `http-server-v2` globally so that it may be run from the command line anywhere.
 
 
 ## Usage from http-server(Usage is absolutely the same):
@@ -62,7 +64,7 @@ This will install `http-server-v2` globally so that it may be run from the comma
 
 `--password` Password for basic authentication [none]
 
-`-S` or `--ssl` Enable https.
+`-S` or `--ssl` Enable https (if you do not apply -C && -K, http-server-v2 auto generated!)
 
 `-C` or `--cert` Path to ssl cert file (default: `cert.pem`).
 
