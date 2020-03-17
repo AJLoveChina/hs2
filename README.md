@@ -21,7 +21,7 @@ hs2 -p 8080 -S  # will create a https server without cert-undefined error
 
 #### Globally via `npm`
 
-    npm install --global http-server-v2
+    npm install -g http-server-v2
 
 
 ## Usage from http-server(Usage is absolutely the same):
