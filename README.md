@@ -1,4 +1,5 @@
-# http-server-v2: a command-line http server with auto-generated ssl
+# http-server-v2 
+## A command-line http server with auto-generated ssl
 
 `http-server-v2` is absolutely extending `http-server`, only added one feature => auto-generated ssl
 
@@ -15,13 +16,13 @@ hs2 -p 8080 -S  # will create a https server without cert-undefined error
 > But every time https-server requires me to apply -C && -K, I'm going to be sick.
 
 ## TODO
-*[ ] support detached mode, run in background after quit shell/cmd (using pm2)  
+* [ ] support detached mode, run in background after quit shell/cmd (using pm2)  
 
 ## Installation:
 
 #### Globally via `npm`
 
-    npm install --global http-server-v2
+    npm install -g http-server-v2
 
 
 ## Usage from http-server(Usage is absolutely the same):
