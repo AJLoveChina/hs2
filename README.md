@@ -1,36 +1,24 @@
-[![build status](https://img.shields.io/travis/http-party/http-server.svg?style=flat-square)](https://travis-ci.org/http-party/http-server)
-[![npm](https://img.shields.io/npm/v/http-server.svg?style=flat-square)](https://www.npmjs.com/package/http-server) [![homebrew](https://img.shields.io/homebrew/v/http-server?style=flat-square)](https://formulae.brew.sh/formula/http-server) [![npm downloads](https://img.shields.io/npm/dm/http-server?color=blue&label=npm%20downloads&style=flat-square)](https://www.npmjs.com/package/http-server)
-[![license](https://img.shields.io/github/license/http-party/http-server.svg?style=flat-square)](https://github.com/http-party/http-server)
+# http-server-v2: a command-line http server with auto-generated ssl
 
-# http-server: a command-line http server
+`http-server-v2` is absolutely extending `http-server`, only added one feature => auto-generated ssl
 
-`http-server` is a simple, zero-configuration command-line http server.  It is powerful enough for production usage, but it's simple and hackable enough to be used for testing, local development, and learning.
+```bash
+# For example 
+http-server -p 8080 -S  # will create a https server without cert-undefined error
+```
 
-![](https://github.com/nodeapps/http-server/raw/master/screenshots/public.png)
+> And everything is the same except the installation!
 
 ## Installation:
 
 #### Globally via `npm`
 
-    npm install --global http-server
+    npm install --global http-server-v2
 
-This will install `http-server` globally so that it may be run from the command line anywhere.
+This will install `http-server-v2` globally so that it may be run from the command line anywhere.
 
-#### Globally via Homebrew
 
-    brew install http-server
-
-#### Running on-demand:
-
-Using `npx` you can run the script without installing it first:
-
-    npx http-server [path] [options]
-     
-#### As a dependency in your `npm` package:
-
-    npm install http-server
-
-## Usage:
+## Usage from http-server(Usage is absolutely the same):
 
      http-server [path] [options]
 
@@ -88,60 +76,7 @@ Using `npx` you can run the script without installing it first:
 
 `-v` or `--version` Print the version and exit.
 
-## Magic Files
 
-- `index.html` will be served as the default file to any directory requests.
-- `404.html` will be served if a file is not found. This can be used for Single-Page App (SPA) hosting to serve the entry page.
-
-## Catch-all redirect
-
-To implement a catch-all redirect, use the index page itself as the proxy with:
-
-```
-http-server --proxy http://localhost:8080?
-```
-
-Note the `?` at the end of the proxy URL. Thanks to [@houston3](https://github.com/houston3) for this clever hack!
-
-## TLS/SSL
-
-First, you need to make sure that [openssl](https://github.com/openssl/openssl) is installed correctly, and you have `key.pem` and `cert.pem` files. You can generate them using this command:
-
-``` sh
-openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem
-```
-
-You will be prompted with a few questions after entering the command. Use `127.0.0.1` as value for `Common name` if you want to be able to install the certificate in your OS's root certificate store or browser so that it is trusted.
-
-This generates a cert-key pair and it will be valid for 3650 days (about 10 years).
-
-Then you need to run the server with `-S` for enabling SSL and `-C` for your certificate file.
-
-``` sh
-http-server -S -C cert.pem
-```
-
-This is what should be output if successful:
-
-``` sh
-Starting up http-server, serving ./ through https
-Available on:
-  https:127.0.0.1:8080
-  https:192.168.1.101:8080
-  https:192.168.1.104:8080
-Hit CTRL-C to stop the server
-```
-
-# Development
-
-Checkout this repository locally, then:
-
-```sh
-$ npm i
-$ node bin/http-server
-```
-
-*Now you can visit http://localhost:8080 to view your server*
-
-You should see the turtle image in the screenshot above hosted at that URL. See
-the `./public` folder for demo content.
+## Author
+* 知乎:[霸都丶傲天](https://www.zhihu.com/people/AJLoveChina)
+* Github:[霸都丶傲天](https://github.com/ajlovechina)
