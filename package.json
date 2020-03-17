@@ -1,17 +1,19 @@
 {
-  "name": "http-server",
-  "version": "0.12.1",
-  "description": "A simple zero-configuration command-line http server",
+  "name": "http-server-v2",
+  "version": "1.0.0",
+  "description": "http server with auto generated SSL",
   "main": "./lib/http-server",
   "repository": {
     "type": "git",
-    "url": "git://github.com/http-party/http-server.git"
+    "url": "git@github.com:AJLoveChina/https-server.git"
   },
   "keywords": [
     "cli",
     "command",
     "http",
-    "server"
+    "server",
+    "https",
+    "auto-generated-ssl"
   ],
   "scripts": {
     "start": "node ./bin/http-server",
@@ -76,6 +78,10 @@
     {
       "name": "Jade Michael Thornton",
       "email": "jade@jmthornton.net"
+    },
+    {
+      "name": "AJLoveChina",
+      "url": "https://github.com/AJLoveChina"
     }
   ],
   "dependencies": {
@@ -88,6 +94,7 @@
     "optimist": "~0.6.1",
     "portfinder": "^1.0.20",
     "secure-compare": "3.0.1",
+    "selfsigned": "^1.10.7",
     "union": "~0.5.0"
   },
   "devDependencies": {
@@ -96,7 +103,7 @@
     "vows": "~0.8.3"
   },
   "bugs": {
-    "url": "https://github.com/http-party/http-server/issues"
+    "url": "https://github.com/AJLoveChina/https-server/issues"
   },
   "license": "MIT",
   "preferGlobal": true,
