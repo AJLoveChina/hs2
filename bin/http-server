@@ -7,6 +7,7 @@ var colors = require('colors/safe'),
     httpServer = require('../lib/http-server'),
     portfinder = require('portfinder'),
     opener = require('opener'),
+    nodePath = require("path"),
     selfsigned = require('selfsigned'),
     fs = require('fs'),
     argv = require('optimist')
@@ -157,6 +158,9 @@ function listen(port) {
         }
         catch (err) {
             console.log("Generate ssl cert");
+
+            options.https.cert = nodePath.resolve(__dirname, 'cert.pem');
+            options.https.key = nodePath.resolve(__dirname, 'key.pem');
 
             var attrs = [{name: 'commonName', value: 'contoso.com'}];
             var pems = selfsigned.generate(attrs, {days: 365});
