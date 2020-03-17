@@ -157,10 +157,12 @@ function listen(port) {
             fs.lstatSync(options.https.key);
         }
         catch (err) {
-            console.log("Generate ssl cert");
 
             options.https.cert = nodePath.resolve(__dirname, 'cert.pem');
             options.https.key = nodePath.resolve(__dirname, 'key.pem');
+            console.log("Generate ssl cert");
+            console.log(`cert path : ${options.https.cert}`);
+            console.log(`key path : ${options.https.key}`);
 
             var attrs = [{name: 'commonName', value: 'contoso.com'}];
             var pems = selfsigned.generate(attrs, {days: 365});
