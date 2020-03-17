@@ -4,9 +4,10 @@
 
 ```bash
 # For example 
-http-server -p 8080 -S  # will create a https server without cert-undefined error
+hs2 -p 8080 -S  # will create a https server without cert-undefined error
 
-# And everything including usage is the same except the installation!
+# hs2 => http-server-v2. Prevent naming conflicts with http-server
+# And everything including usage,parameters ... are the same except the installation!
 ```
 
 ## Why I create this?
@@ -22,7 +23,7 @@ http-server -p 8080 -S  # will create a https server without cert-undefined erro
 
 ## Usage from http-server(Usage is absolutely the same):
 
-     http-server [path] [options]
+     hs2 [path] [options]
 
 `[path]` defaults to `./public` if the folder exists, and `./` otherwise.
 
