@@ -4,7 +4,7 @@
 ## Outdated project
 > http-server-v2 has been renamed to hs2. A more concise and elegant name
 
-> [hs2 npm link is here](https://www.npmjs.com/package/http-server-v2) 
+> [hs2 npm link is here](https://www.npmjs.com/package/hs2) 
 
 `http-server-v2` is absolutely extending `http-server`, only added one feature => auto-generated ssl
 
