@@ -1,11 +1,11 @@
 {
-  "name": "http-server-v2",
-  "version": "1.0.4",
+  "name": "hs2",
+  "version": "1.1.0",
   "description": "http server with auto generated SSL",
   "main": "./lib/http-server",
   "repository": {
     "type": "git",
-    "url": "git@github.com:AJLoveChina/https-server.git"
+    "url": "git@github.com:AJLoveChina/hs2.git"
   },
   "keywords": [
     "cli",
@@ -103,7 +103,7 @@
     "vows": "~0.8.3"
   },
   "bugs": {
-    "url": "https://github.com/AJLoveChina/https-server/issues"
+    "url": "https://github.com/AJLoveChina/hs2/issues"
   },
   "license": "MIT",
   "preferGlobal": true,

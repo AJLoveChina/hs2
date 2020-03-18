@@ -1,13 +1,15 @@
-# http-server-v2 
+# hs2
 ## A command-line http server with auto-generated ssl
 
-`http-server-v2` is absolutely extending `http-server`, only added one feature => auto-generated ssl
+<image src='./screenshots/hs2.jpg' width='600' align='center' />
+
+`hs2` is absolutely extending `http-server`, only added one feature => auto-generated ssl
 
 ```bash
 # For example 
 hs2 -p 8080 -S  # will create a https server without cert-undefined error
 
-# hs2 => http-server-v2. Prevent naming conflicts with http-server
+# hs2 means http-server-v2. Prevent naming conflicts with http-server
 # And everything including usage,parameters ... are the same except the installation!
 ```
 
@@ -22,7 +24,7 @@ hs2 -p 8080 -S  # will create a https server without cert-undefined error
 
 #### Globally via `npm`
 
-    npm install -g http-server-v2
+    npm install -g hs2
 
 
 ## Usage from http-server(Usage is absolutely the same):
@@ -69,7 +71,7 @@ hs2 -p 8080 -S  # will create a https server without cert-undefined error
 
 `--password` Password for basic authentication [none]
 
-`-S` or `--ssl` Enable https (if you do not apply -C && -K, http-server-v2 auto generated!)
+`-S` or `--ssl` Enable https (if you do not apply -C && -K, hs2 auto generated!)
 
 `-C` or `--cert` Path to ssl cert file (default: `cert.pem`).
 
@@ -87,3 +89,6 @@ hs2 -p 8080 -S  # will create a https server without cert-undefined error
 ## Author
 * 知乎:[霸都丶傲天](https://www.zhihu.com/people/AJLoveChina)
 * Github:[霸都丶傲天](https://github.com/ajlovechina)
+
+## 知乎文章
+[💪自签名证书的http-server来了!](https://zhuanlan.zhihu.com/p/113881794)
