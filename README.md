@@ -1,6 +1,7 @@
 # http-server-v2 
 ### A command-line http server with auto-generated ssl
 
+## Outdated project
 > http-server-v2 has been renamed to hs2. A more concise and elegant name
 
 > [hs2 npm link is here](https://www.npmjs.com/package/http-server-v2) 
