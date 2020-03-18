@@ -1,7 +1,8 @@
 # hs2
 ## A command-line http server with auto-generated ssl
-
-<image src='./screenshots/hs2.jpg' width='600' align='center' />
+<p align='center'>
+    <image src='./screenshots/hs2.jpg' width='600' />
+</p>
 
 `hs2` is absolutely extending `http-server`, only added one feature => auto-generated ssl
 
