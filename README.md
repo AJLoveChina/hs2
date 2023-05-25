@@ -93,3 +93,6 @@ hs2 -p 8080 -S  # will create a https server without cert-undefined error
 
 ## 知乎文章
 [💪自签名证书的http-server来了!](https://zhuanlan.zhihu.com/p/113881794)
+
+## Related Project
+- https://github.com/AJLoveChina/hs3 - A cli tool to create daemon http/https static files server
