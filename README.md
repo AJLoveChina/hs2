@@ -19,7 +19,7 @@ hs2 -p 8080 -S  # will create a https server without cert-undefined error
 > But every time https-server requires me to apply -C && -K, I'm going to be sick.
 
 ## TODO
-* [ ] support detached mode, run in background after quit shell/cmd (using pm2)  
+* [ ] support detached mode, run in background after quit shell/cmd - please try https://github.com/AJLoveChina/hs3 
 
 ## Installation:
 
